@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @room.name %>
+</p>
+
+<p>
+  <strong>Meeting:</strong>
+  <%= @room.meeting %>
+</p>
+
+<p>
+  <strong>Attendee pw:</strong>
+  <%= @room.attendee_pw %>
+</p>
+
+<p>
+  <strong>Moderator pw:</strong>
+  <%= @room.moderator_pw %>
+</p>
+
+<%= link_to 'Show Users', room_users_path(@room) %> |
+<%= link_to 'Edit', edit_room_path(@room) %> |
+<%= link_to 'Back', rooms_path %>

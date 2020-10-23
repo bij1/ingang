@@ -1,0 +1,6 @@
+<h1><%= @room.name %></h1>
+<% if @running %>
+  <p>Welkom, je wordt doorgestuurd naar binnen of <a href="<%= @url %>">klik hier om naar binnen te gaan</a>.</p>
+<% else %>
+  <p>De vergadering is op dit moment niet toegankelijk, probeer het later nog eens.</p>
+<% end %>
